@@ -4,6 +4,7 @@
 public class Node {
     private int rank;
     private Node head;
+    private int elementsInTree;
 
     public Node() {
         resetToDefaultValues();
@@ -15,6 +16,7 @@ public class Node {
 
     public void setHead(Node head) {
         this.head = head;
+        head.setElementsInTree(head.getElementsInTree() + elementsInTree);
     }
 
     public int getRank() {
@@ -32,6 +34,14 @@ public class Node {
     public Node resetToDefaultValues(){
         rank = 0;
         head = this;
+        elementsInTree = 1;
         return this;
+    }
+    public int getElementsInTree() {
+        return elementsInTree;
+    }
+
+    public void setElementsInTree(int elementsInTree) {
+        this.elementsInTree = elementsInTree;
     }
 }
