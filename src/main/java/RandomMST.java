@@ -2,6 +2,7 @@ import java.util.*;
 
 /**
  * Created by Mack Heller on 21/10/2016.
+ * 
  */
 public class RandomMST {
     public double totalWeight;
