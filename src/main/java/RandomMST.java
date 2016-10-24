@@ -104,11 +104,13 @@ public class RandomMST {
             return insertSortedHelper(edges,element,halfway+1,end);
         }
     }
-    
-    public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		RandomMST rmst = new RandomMST();
-		System.out.println(rmst.randomMST(100));
 
-	}
+    public static void main (String[] args)
+    {
+        RandomMST randomMST = new RandomMST();
+        for (String s: args) {
+            System.out.println(randomMST.randomMST(Integer.valueOf(s)));
+        }
+
+    }
 }
