@@ -118,9 +118,11 @@ public class CircleMST {
     }
     
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		CircleMST rmst = new CircleMST();
-		System.out.println(rmst.circleMST(100));
+		CircleMST circleMST = new CircleMST();
+        for (String s: args) {
+            System.out.println(circleMST.circleMST(Integer.valueOf(s)));
+        }
+
 	}
 
 }

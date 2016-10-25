@@ -1,0 +1,32 @@
+RandomMST
+1.
+
+
+
+2. 
+	V			Runtime			Output
+	10			
+	100			
+	1000		
+	10000		
+
+3.
+
+CircleMST
+1. 
+Every time we add a new vertex we recompute the minimum spanning tree using kruskal's algorithm 
+to compute the new minimum spanning tree. We first generate all the edges connecting the new vertex to
+all the other vertices in the graph excluding edges that are larger than the smallest edge we've seen
+so far. Then we recalculate the minimum spanning tree over all the newly 
+generated edges and the edges in the previous minimum spanning tree. 
+
+2. 
+	V			Runtime			Output
+	10			
+	100			
+	1000		
+	10000		
+
+3. For our algorithm, if we have need V vertices, we need to run kruskal's algorithms V times and since
+kruskal's algorithm runs in E log V and since we have at most 2V edges in the graph at any time, we can say that 
+the algorithm is in O(v^2logV)
