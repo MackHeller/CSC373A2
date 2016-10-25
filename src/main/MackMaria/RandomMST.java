@@ -105,8 +105,6 @@ public class RandomMST {
         RandomMST randomMST = new RandomMST();
         for (String s: args) {
             System.out.println(randomMST.randomMST(Integer.valueOf(s)));
-        } /*
-        RandomMST rmst = new RandomMST();
-        System.out.println(rmst.randomMST(10000));*/
+        }
     }
 }

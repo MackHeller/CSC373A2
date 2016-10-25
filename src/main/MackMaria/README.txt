@@ -14,10 +14,10 @@ would most likely be more optimal.
 
 2.
 	V			Runtime			Output
-	10
-	100
-	1000
-	10000
+	10          0.002s          1.1748414121495079
+	100         0.008s          1.093292263223537
+	1000        0.061s          1.2206607344551461
+	10000       4.997s          1.179055127043645
 
 3. The RandomMST program, in the worst case, executes kruskal's algorithm V times, where V is the number of vertexes given
 to the program. This results in a time complexity V*kruskal's which is V*(E*logV). Because our list of edges are at most
@@ -33,10 +33,10 @@ generated edges and the edges in the previous minimum spanning tree.
 
 2.
 	V			Runtime			Output
-	10
-	100
-	1000
-	10000
+	10          0.002s          3.208117455355781
+	100         0.008s          12.0808547683665
+	1000        0.048s          36.542923820722216
+	10000       3.343s          116.02299860786574
 
 3. For our algorithm, if we have V vertices, we need to run kruskal's algorithms V times. Since
 kruskal's algorithm runs in E log V and since we have at most 2V edges in the graph at any time, we can say that

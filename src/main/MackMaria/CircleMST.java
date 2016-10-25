@@ -41,11 +41,6 @@ public class CircleMST {
             nodes.add(newNode);
             edges = kruskal(edges.iterator(), nodes.size());
         }
-        // For testing only
-        Iterator<CircleEdge> edgeIterator = edges.iterator();
-        while(edgeIterator.hasNext()) {
-            System.out.println(edgeIterator.next().toString());
-        }
         return totalWeight;
     }
 
@@ -116,13 +111,10 @@ public class CircleMST {
     }
     
 	public static void main(String[] args) {
-
         CircleMST circleMST = new CircleMST();
         for (String s: args) {
             System.out.println(circleMST.circleMST(Integer.valueOf(s)));
-        }/*
-		CircleMST rmst = new CircleMST();
-		System.out.println(rmst.circleMST(10));*/
+        }
 	}
 
 }
