@@ -102,12 +102,11 @@ public class RandomMST {
 
     public static void main (String[] args)
     {
-        /*
         RandomMST randomMST = new RandomMST();
         for (String s: args) {
             System.out.println(randomMST.randomMST(Integer.valueOf(s)));
-        }*/
+        } /*
         RandomMST rmst = new RandomMST();
-        System.out.println(rmst.randomMST(1000));
+        System.out.println(rmst.randomMST(10000));*/
     }
 }
